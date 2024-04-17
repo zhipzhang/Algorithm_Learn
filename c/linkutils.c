@@ -44,7 +44,7 @@ void InverseList2(List* list)
 }
 
 // 合并有序链表
-List* Merge_Two_List(List* list1, List* list2)
+List* Merge_Two_List(List* list1, List* list2, int (*compare)(const void* data1, const void* data2))
 {
     printf("Before Merge: \n");
     print_list(list1, print_int);
